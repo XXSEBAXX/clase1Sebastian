@@ -1,0 +1,126 @@
+body {
+    text-align: left;
+    margin: 20px;
+    padding: 0px;
+    background-image: linear-gradient("images/avion.jpg");
+    background-size: cover;
+}
+
+#logo{
+    background-color: blueviolet;
+    height: 180px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#cabezera nav{
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 350px;
+
+}
+
+#logo img{
+
+    width: 250px;
+    height: 120px;
+    margin-top: 25px;
+    margin-left: 20px;
+    float: left;
+}
+.bienvenido h1{
+    
+    float: center;
+    margin-left: 300px;
+    margin-right: 550px;
+    color: red; 
+    text-align: right;
+}
+
+#menu{
+    float: right;
+    margin-top: 5px;
+    margin-bottom: auto;
+    margin-right: 220px;
+}
+
+#menu li{
+    display: block;
+    list-style: none;
+    font-size: 25px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#menu a{
+    color: black;
+    text-align: right;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+#menu a:hover{
+    color: blueviolet;
+    text-decoration: none;
+}
+
+#formulario{
+    display: inline-block;
+    text-align: center;
+}
+
+#formulario input{
+    display: block;
+    text-align: center;
+    width: 200px;    
+}
+
+.form-group  input{
+    display: inline-block;
+    height: 200;
+    width: 200;
+    margin-left: 350px;
+    margin-right: 50px ;
+}
+
+.form-group2 {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 350px;
+    margin-right: 50px ;
+}
+
+.form-group label{
+    margin-left: 200px;
+    margin-right: 5px ;
+}
+
+.boton  button{
+    display: inline-block;
+    height: 100;
+    width: 100;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-left: auto;
+   
+}
+
+.foot{
+    background: grey;
+    height: 100px;
+    width: 100%;
+    margin-bottom: 0px;
+    margin-top: 100px;
+}
+
+.foot p{
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 150px;
+    padding-top: 20px;
+}
+

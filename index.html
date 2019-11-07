@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lan</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <script>
+        var nombre;
+
+        function validador(){
+
+        var campo1 =  document.getElementsByClassName('.form-group1');
+        var campo2 =  document.getElementsByClassName('.form-group2');
+        var campo3 =  document.getElementsByClassName('.form-group3');
+    
+
+        if (campo1.value == '' && campo2.value == '' && campo3.value == ''){
+
+        alert("campos completados");
+            }else{
+        alert("falta completar 1 o mas campos");
+            }
+        }       
+
+        function pedirNombre(){
+            nombre = prompt("cual es tu nombre")
+        }
+
+
+        function comprarPasaje(nombre){
+            validador();
+            pedirNombre();
+
+            alert("has comprado los pasajes " + this.nombre);
+        }
+
+    </script>
+
+    <header>
+      <div id="cabezera">
+            <div id="logo">
+                    <img src="images/Lan.png" class="app-logo" alt="Logotipo">       
+            </div>
+            <div class="bienvenido">
+                <h1>Bienvenidos a LAN</h1>
+            </div>
+            <div id="menu">
+              <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="vuelos.html">Vuelos</a>
+                        </li>
+                        <li>
+                           <a href="administraViaje.html">Administra Tu viaje</a>
+                       </li>
+                       <li>
+                           <a href="InfoViaje">Info</a>
+                       </li>
+                    </ul>
+                </nav>
+            </div> 
+        </div>       
+        <div>
+            <form id="formulario">
+                         <!--Usar onchange evento cuando se complete parametro-->   
+                        <div class="form-group">
+                            <label for="origen">Origen</label>
+                            <input class="form-group1" type="text" name="origen" placeholder="Origen"/>
+                        </div>
+                        <div class="form-group">
+                                <label for="destino">Destino</label>
+                                <input class="form-group2" type="text" name="destino" placeholder="Destino"/>
+                        </div>
+                        <div class="form-group">
+                                <label for="fecha">Fecha</label>
+                                <input class="form-group3" type="text" name="fecha"placeholder="dd/mm/aa"/>
+                        </div>
+                        <div class="form-group2">
+                                <input type="radio" name="clase" value="turista"/>Turista
+                                <input type="radio" name="clase" value="vip"/>VIP
+                        </div>
+                      
+                        <div class="boton">
+                               <!-- <input type="button" name="enviar" value="enviar"/> -->
+                               <button type="button" onclick="comprarPasaje()">Enviar</button>
+                        </div>         
+            </form>  
+        </div>    
+    </header>
+    <div class="clearfix"></div>
+    <footer>
+        <div class="foot">
+            <div>
+                <p>
+                    &copy; LAN Empresas
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
